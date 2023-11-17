@@ -1,12 +1,13 @@
+import Image from "next/image";
 import { FC } from "react";
 
 const OpportunitiesCard1 = ({}) => {
   return (
     <>
       <div className=" relative flex flex-col justify-start items-center gap-2.5 ">
-        <div className=" grow shrink basis-0 p-20  flex-col justify-start items-center  text-white gap-16 flex">
-          <div className=" flex-col justify-start items-start gap-12 flex">
-            <div className="  flex-col justify-start items-center gap-2 flex">
+        <div className="flex flex-col items-center justify-start gap-16 p-20 text-white grow shrink basis-0">
+          <div className="flex flex-col items-start justify-start gap-12 ">
+            <div className="flex flex-col items-center justify-start gap-2 ">
               <div className=" text-center  text-[42px] font-bold  ">
                 Explore and embrace opportunities for you
               </div>
@@ -16,9 +17,10 @@ const OpportunitiesCard1 = ({}) => {
           <div className="grid grid-cols-3 gap-4">
 
             <div className="  border border-zinc-200 flex-col justify-start items-center gap-[5px] inline-flex">
-              <img className="self-stretch h-[400px]" src="images/cardpicture1.png" />
-              <div className="self-stretch  px-4 pt-6 pb-4 flex-col justify-start items-start gap-4 flex">
-                <div className=" flex-col justify-start items-start gap-1 flex">
+             
+              <Image src={"/images/cardpicture1.png"} alt={""} height={400} width={400}></Image>
+              <div className="flex flex-col items-start self-stretch justify-start gap-4 px-4 pt-6 pb-4">
+                <div className="flex flex-col items-start justify-start gap-1 ">
                   <div className="self-stretch  text-[40px] font-bold  leading-[44px]">
                     Get Inspired
                   </div>
@@ -28,23 +30,24 @@ const OpportunitiesCard1 = ({}) => {
                   seminars and mentorship programs
                 </div>
               </div>
-              <div className="p-4  justify-start items-start gap-4 inline-flex ">
-                <div className=" pr-2 py-4 justify-center items-center gap-4 flex">
-                  <div className="justify-center items-center flex">
-                    <div className=" text-xl font-medium  underline leading-tight tracking-wide">
+              <div className="inline-flex items-start justify-start gap-4 p-4 ">
+                <div className="flex items-center justify-center gap-4 py-4 pr-2 ">
+                  <div className="flex items-center justify-center">
+                    <div className="text-xl font-medium leading-tight tracking-wide underline ">
                       Discover your strength and confidence.
                     </div>
                   </div>
-                  <div className="w-6 h-6 relative" />
+                  <div className="relative w-6 h-6" />
                 </div>
               </div>
             </div>
 
             <div className="  border border-zinc-200 flex-col justify-start items-center gap-[5px] inline-flex ">
-              <img className="self-stretch h-[400px]" src="images/cardpicture2.png" />
+              
+              <Image  alt={""} src={"/images/cardpicture2.png"} height={400} width={400}></Image>
 
-              <div className="self-stretch px-4 pt-6 pb-4 flex-col justify-start items-start gap-4 flex">
-                <div className=" flex-col justify-start items-start gap-1 flex">
+              <div className="flex flex-col items-start self-stretch justify-start gap-4 px-4 pt-6 pb-4">
+                <div className="flex flex-col items-start justify-start gap-1 ">
                   <div className="self-stretch  text-[40px] font-bold  leading-[44px]">
                     Get Empowered
                   </div>
@@ -56,22 +59,25 @@ const OpportunitiesCard1 = ({}) => {
                 </div>
               </div>
 
-              <div className=" p-4 justify-start items-start gap-4 inline-flex ">
-                <div className="grow shrink basis-0 h-12 pr-2 py-4 justify-between items-center flex">
-                  <div className="justify-center items-center flex">
-                    <div className=" text-xl font-medium  underline leading-tight tracking-wide">
+              <div className="inline-flex items-start justify-start gap-4 p-4 ">
+                <div className="flex items-center justify-between h-12 py-4 pr-2 grow shrink basis-0">
+                  <div className="flex items-center justify-center">
+                    <div className="text-xl font-medium leading-tight tracking-wide underline ">
                       Build skills for work
                     </div>
                   </div>
-                  <div className="w-6 h-6 relative" />
+                  <div className="relative w-6 h-6" />
                 </div>
               </div>
             </div>
 
             <div className="  border border-zinc-200 flex-col justify-start items-center gap-[5px] inline-flex ">
-              <img className="self-stretch h-[400px]" src="images/cardpicture3.png" />
-              <div className="self-stretch  px-4 pt-6 pb-4 flex-col justify-start items-start gap-4 flex">
-                <div className=" flex-col justify-start items-start gap-1 flex">
+             
+
+              <Image  alt={""} src={"/images/cardpicture3.png"} height={400} width={400}></Image>
+              
+              <div className="flex flex-col items-start self-stretch justify-start gap-4 px-4 pt-6 pb-4">
+                <div className="flex flex-col items-start justify-start gap-1 ">
                   <div className="self-stretch  text-[40px] font-bold  leading-[44px]">
                     Get Involved
                   </div>
@@ -81,14 +87,14 @@ const OpportunitiesCard1 = ({}) => {
                   environment as well as develop our communities
                 </div>
               </div>
-              <div className=" p-4 justify-start items-start gap-4 inline-flex">
-                <div className="grow shrink basis-0 h-12 pr-2 py-4 justify-between items-center flex">
-                  <div className="justify-center items-center flex">
-                    <div className=" text-xl font-medium  underline leading-tight tracking-wide">
+              <div className="inline-flex items-start justify-start gap-4 p-4 ">
+                <div className="flex items-center justify-between h-12 py-4 pr-2 grow shrink basis-0">
+                  <div className="flex items-center justify-center">
+                    <div className="text-xl font-medium leading-tight tracking-wide underline ">
                       Explore activities
                     </div>
                   </div>
-                  <div className="w-6 h-6 relative" />
+                  <div className="relative w-6 h-6" />
                 </div>
               </div>
             </div>

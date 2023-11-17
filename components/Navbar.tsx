@@ -94,7 +94,7 @@ const Navbar = () => {
                 <p className="font-[700]">Contact us</p>
                 <p className="text-[#64748B]">
                   Got questions about our programs, initiatives, or TYC Africa
-                  Trust in general? We're here to provide answers and assistance
+                  Trust in general? We&apos;re here to provide answers and assistance
                 </p>
               </div>
             </div>
@@ -215,7 +215,7 @@ const Navbar = () => {
             
             <div className="grid">
 
-              <div id="help" className="flex-col gap-3 h-auto" style={{display: activeTab==='help'? 'grid':'none'}}>
+              <div id="help" className="flex-col h-auto gap-3" style={{display: activeTab==='help'? 'grid':'none'}}>
 
                 <div className="h-[16rem]  block rounded">
                     <div className="h-full p-2 rounded bg-gradient-to-b from-[#DB4E66] via-[#A24688] to-[#4E3ABA]"></div>
@@ -239,7 +239,7 @@ const Navbar = () => {
                 </div>
               </div>
 
-              <div id="help" className="flex-col gap-3 h-auto" style={{display: activeTab==='partner'? 'grid':'none'}}>
+              <div id="help" className="flex-col h-auto gap-3" style={{display: activeTab==='partner'? 'grid':'none'}}>
 
                 <div className="h-[16rem]  block rounded">
                     <div className="h-full p-2 rounded bg-gradient-to-b from-[#DB4E66] via-[#A24688] to-[#4E3ABA]"></div>
@@ -252,7 +252,7 @@ const Navbar = () => {
                 </div>
               </div>
 
-              <div id="help" className="flex-col gap-3 h-auto" style={{display: activeTab==='about'? 'grid':'none'}}>
+              <div id="help" className="flex-col h-auto gap-3" style={{display: activeTab==='about'? 'grid':'none'}}>
 
                 <div className="h-[16rem]  block rounded">
                     <div className="h-full p-2 rounded bg-gradient-to-b from-[#DB4E66] via-[#A24688] to-[#4E3ABA]"></div>
@@ -265,7 +265,7 @@ const Navbar = () => {
                 </div>
               </div>
 
-              <div id="help" className="flex-col gap-3 h-auto" style={{display: activeTab==='resources'? 'grid':'none'}}>
+              <div id="help" className="flex-col h-auto gap-3" style={{display: activeTab==='resources'? 'grid':'none'}}>
 
                 <div className="h-[16rem]  block rounded">
                     <div className="h-full p-2 rounded bg-gradient-to-b from-[#DB4E66] via-[#A24688] to-[#4E3ABA]"></div>

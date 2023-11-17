@@ -5,40 +5,40 @@ import { Icons } from './Icons'
 
 const SupportOurWorkCard = ({}) => {
    return <>
-    <div className=' block'>
+    <div className='block '>
     <div className='relative flex items-center py-16'>
 
         <div className='absolute h-full w-[55%]'>
-            <div className='absolute top-0 left-0 h-full w-full '>
-                <div className='opacity-1 overflow-hidden  '>
+            <div className='absolute top-0 left-0 w-full h-full '>
+                <div className='overflow-hidden opacity-1 '>
                     <Image className='border' src={'/images/support.jpg'} alt={'TYC members being adviced'} width={720} height={994}></Image>
                 </div>
             </div>
         </div>
 
         <div className='ml-[50%] w-1/2 z-10 border-b-4 border-b-blue-700 bg-white px-4 relative top-2  flex flex-col items-center py-3 border'>
-            <div className='font-semibold py-3'>
-            <div className="font-semibold py-3">
-              <h2 className="text-2xl px-2 text-center">
+            <div className='py-3 font-semibold'>
+            <div className="py-3 font-semibold">
+              <h2 className="px-2 text-2xl text-center">
                 Support Our Work
               </h2>
             </div>
-            <div className="font-semibold py-3">
-              <h2 className="text-2xl px-2 text-center">
+            <div className="py-3 font-semibold">
+              <h2 className="px-2 text-2xl text-center">
                 Want to get involved?
               </h2>
             </div>
             </div>
-            <div className='font-normal text-lg py-3 px-3 '>
-                <div className='relative  whitespace-pre-wrap text-center'>
+            <div className='px-3 py-3 text-lg font-normal '>
+                <div className='relative text-center whitespace-pre-wrap'>
                     <p>
                     Become a part of our journey in empowering African youth!                     </p>
                 </div>
-                <div className='relative  whitespace-pre-wrap text-center'>
+                <div className='relative text-center whitespace-pre-wrap'>
                     <p>
-                    Your support matters. Whether you're keen on volunteering, partnering with us, or contributing to our mission, there's a place for your passion at TYC Africa Trust.                     </p>
+                    Your support matters. Whether you&apos;re keen on volunteering, partnering with us, or contributing to our mission, there&apos;s a place for your passion at TYC Africa Trust.                     </p>
                 </div>
-                <div className='relative  whitespace-pre-wrap text-center'>
+                <div className='relative text-center whitespace-pre-wrap'>
                     <p>
                     Explore the diverse ways you can get involved and make a difference.                    </p>
                 </div>
