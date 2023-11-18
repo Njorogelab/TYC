@@ -9,20 +9,20 @@ const Hero = () => {
         alt={"TYC youth holding hands"}
         width={1440}
         height={700}
-        className="left-0 "
+        className=" min-h-[390px]"
       />
 
       {/* <video autoPlay loop style={{width:'1440px', height:'700px'}}><source className="w-full " src="/images/home page video 720.mp4"/></video> */}
 
-      <div className="absolute items-center gap-5 left-40 top-80">
+      <div className="absolute items-center top-40 md:left-40 md:top-80">
 
-         <div className="flex flex-row items-center gap-5 ">
+         <div className="flex flex-row items-center gap-2 md:gap-5 ">
         <div className="bg-transparent mix-blend-overlay">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="144"
-            height="127"
-            viewBox="0 0 144 127"
+            width="120"
+            height="120"
+            viewBox="0 0 144 120"
             fill="none"
           >
             <path
@@ -46,14 +46,14 @@ const Hero = () => {
           </svg>
         </div>
         
-        <p className=" font-extrabold text-8xl text-black opacity-70 bg-[#DAF0EE] mix-blend-overlay bg-opacity-40">TYC</p>
+        <p className=" font-extrabold text-5xl md:text-8xl text-black opacity-70 bg-[#DAF0EE] mix-blend-overlay bg-opacity-40">TYC</p>
 
-        <p className=" font-extrabold text-8xl text-black opacity-70 bg-[#DAF0EE] mix-blend-overlay bg-opacity-40">AFRICA</p>
+        <p className=" font-extrabold text-5xl md:text-8xl text-black opacity-70 bg-[#DAF0EE] mix-blend-overlay bg-opacity-40">AFRICA</p>
         </div>
 
         <div className="flex justify-around ">
 
-        <p className=" font-extrabold text-8xl text-black opacity-70 bg-[#DAF0EE] mix-blend-overlay bg-opacity-40">TRUST</p>
+        <p className=" font-extrabold text-5xl md:text-8xl text-black opacity-70 bg-[#DAF0EE] mix-blend-overlay bg-opacity-40">TRUST</p>
         </div>
       </div>
 

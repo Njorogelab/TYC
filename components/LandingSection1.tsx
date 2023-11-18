@@ -6,17 +6,17 @@ import { Button } from './ui/button'
 const LandingSection1 = ({}) => {
    return <>
     <div className='block '>
-    <div className='relative flex items-center '>
+    <div className='relative items-center '>
 
-        <div className='absolute h-full w-[55%]'>
-            <div className='absolute top-0 left-0 w-full h-full '>
+        <div className='md:absolute md:h-full md:w-[55%]'>
+            <div className='top-0 left-0 w-full h-full md:absolute '>
                 <div className='overflow-hidden opacity-1 '>
                     <Image className='border' src={'/images/section.jpg'} alt={'TYC members standing together'} width={720} height={994}></Image>
                 </div>
             </div>
         </div>
 
-        <div className='ml-[50%] w-1/2 z-10 border-b-4 border-b-black bg-white px-4 relative top-10 flex items-center flex-col'>
+        <div className='md:ml-[50%] md:w-1/2 md:z-10 border-b-4 border-b-black bg-white px-4 relative md:top-10 flex items-center flex-col'>
             <div className='py-3 font-semibold'>
                 <h2 className='px-2 text-2xl text-center'>Unlocking Opportunities for Youth Success</h2>
             </div>

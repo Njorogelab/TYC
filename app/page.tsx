@@ -13,25 +13,25 @@ import SupportOurWorkCard from '@/components/SupportOurWorkCard'
 export default function Home() {
   return (
     <>
-    <main className="flex flex-col  w-full px-1 ">
-      <div className=" w-full  text-sm lg:flex flex-col ">
+    <main className="flex flex-col w-full px-1 ">
+      <div className="flex-col w-full text-sm lg:flex">
 
        <Hero/> 
        
       </div>
 
     </main>
-    <div className=" w-full   lg:flex">
+    <div className="w-full lg:flex">
         <HeroText/>
       </div>
 
-    <section className='block px-10 py-8 bg-[#3FE2D3] min-h-[570px]'>
+    <section className='block p-2 md:px-10 md:py-8 bg-[#3FE2D3] min-h-[570px]'>
       <div className='text-start'>
         <LandingSection1/>
       </div>
     </section>
 
-    <section className='px-10 py-8 bg-red-700 min-h-[600px]'>
+    <section className='p-2 md:px-10 md:py-8 bg-red-700 md:min-h-[600px]'>
           <div className=''>
             <AnnualConferenceCard/>
           </div>
@@ -43,7 +43,7 @@ export default function Home() {
       </div>
     </section>
 
-    <section className='block px-10 py-8 min-h-[575px]'>
+    <section className='block p-2 md:px-10 md:py-8 md:min-h-[575px]'>
       <div className='text-start'>
         <SupportOurWorkCard/>
       </div>

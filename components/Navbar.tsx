@@ -14,18 +14,25 @@ import { Icons } from "./Icons";
 import Link from "next/link";
 import { useState } from "react";
 
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+
 const Navbar = () => {
   const [activeTab, setActiveTab] = useState("help");
 
   return (
     <div>
       <Sheet>
-        <SheetTrigger className="flex items-center gap-3 ">
-          Menu <Icons.menu />
+        <SheetTrigger className="flex flex-col-reverse items-center text-sm sm:gap-1 md:gap-3 md:text-xl md:flex-row">
+          Menu <Icons.menu className=""/>
         </SheetTrigger>
 
         <SheetContent className="border rounded-lg scroll-auto" side="top">
-          <div className="grid grid-flow-col gap-2 rounded grid-col-3">
+          <div className="hidden grid-flow-col gap-2 rounded md:grid grid-col-3">
             
             <div className="flex-col gap-2 p-3 border-r ">
               <div
@@ -279,6 +286,152 @@ const Navbar = () => {
               </div>
             </div>
             
+          </div>
+
+          
+          <div className="md:hidden">
+          <Accordion type="single" collapsible className="w-full">
+      <AccordionItem value="item-1">
+        <AccordionTrigger>How we help</AccordionTrigger>
+        <AccordionContent className="px-3 rounded-md bg-blue-50">
+                <ul className="flex flex-col font-[700] underline gap-3">
+                  <li>
+                    <Link href="/">Youth Development Hub</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Talent Discovery</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Resilience Building</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Community Outreach</Link>
+                  </li>
+                </ul>
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-2">
+        <AccordionTrigger>Support us</AccordionTrigger>
+        <AccordionContent className="px-3 rounded-md bg-blue-50">
+        <ul className="flex flex-col font-[700] underline gap-3">
+                  <li>
+                    <Link href="/">Donate</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Become a Youth Ambassador</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Volunteer</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Take part in an event</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Legacy giving</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Large gifts</Link>
+                  </li>
+                  <li>
+                    <Link href="/">More options</Link>
+                  </li>
+                </ul>
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-3">
+        <AccordionTrigger>Partner with us</AccordionTrigger>
+        <AccordionContent className="px-3 rounded-md bg-blue-50">
+        <ul className="flex flex-col font-[700] underline gap-3">
+                  <li>
+                    <Link href="/">Non Governmental Institutions</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Government Institutions</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Education Institutes</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Businesses</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Get in touch</Link>
+                  </li>
+                </ul>
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-4">
+        <AccordionTrigger>About us</AccordionTrigger>
+        <AccordionContent className="px-3 rounded-md bg-blue-50">
+        <ul className="flex flex-col font-[700] underline gap-3">
+                  <li>
+                    <Link href="/">Our mission</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Our latest initiatives</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Our history</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Our people</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Our impact stories</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Media centre</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Our core values</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Our events</Link>
+                  </li>
+                </ul>
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-5">
+        <AccordionTrigger>Resources at TYC</AccordionTrigger>
+        <AccordionContent className="px-3 rounded-md bg-blue-50">
+        <ul className="flex flex-col font-[700] underline gap-3">
+                  <li>
+                    <Link href="/">Education Materials</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Expert Advice</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Youth Perspectives</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Events calendar</Link>
+                  </li>
+                  
+                </ul>
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-6">
+        <AccordionTrigger>Contact us</AccordionTrigger>
+        <AccordionContent className="px-3 rounded-md bg-blue-50">
+        <ul className="flex flex-col font-[700] underline gap-3">
+                  <li>
+                    <Link href="/">Get in touch</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Meet our team</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Subscribe to our newsletter</Link>
+                  </li>
+                  
+                  
+                </ul>
+        </AccordionContent>
+      </AccordionItem>
+    </Accordion>
+
+    
           </div>
         </SheetContent>
       </Sheet>

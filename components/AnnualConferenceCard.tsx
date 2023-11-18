@@ -6,22 +6,22 @@ import { Icons } from "./Icons";
 const AnnualConferenceCard = ({}) => {
   return (
     <>
-      <div className=" block">
-        <div className="relative flex items-center py-16">
+      <div className="block ">
+        <div className="relative flex flex-col-reverse items-center md:py-16">
 
-          <div className="mr-[50%] w-1/2 z-10 border-b-4 border-b-black bg-white px-4 relative top-6 flex items-center flex-col">
-            <div className="font-semibold py-3">
-              <h2 className="text-2xl px-2 text-center">
+          <div className="md:mr-[50%] md:w-1/2 md:z-10 border-b-4 border-b-black bg-white md:px-4 relative md:top-6 flex items-center flex-col">
+            <div className="py-3 font-semibold">
+              <h2 className="px-2 text-2xl text-center">
                 The Annual Youth Conference{" "}
               </h2>
             </div>
-            <div className="font-semibold py-3">
-              <h2 className="text-2xl px-2 text-center">
+            <div className="py-3 font-semibold">
+              <h2 className="px-2 text-2xl text-center">
                 Ready to join us?
               </h2>
             </div>
-            <div className="font-normal text-lg py-3 px-3">
-              <div className="relative  whitespace-pre-wrap text-center">
+            <div className="px-3 py-3 text-lg font-normal">
+              <div className="relative text-center whitespace-pre-wrap">
                 <p>
                   Step into an unforgettable experience! Our Annual Youth
                   Conference brings together young minds from across Africa to
@@ -43,9 +43,9 @@ const AnnualConferenceCard = ({}) => {
            
           </div>
 
-          <div className="absolute inset-y-0  right-0 h-full w-[55%]">
-            <div className="absolute  h-full w-full ">
-              <div className="opacity-1 overflow-hidden  ">
+          <div className="md:absolute inset-y-0  right-0 h-full md:w-[55%]">
+            <div className="w-full h-full md:absolute ">
+              <div className="overflow-hidden opacity-1 ">
                 <Image
                   className="border"
                   src={"/images/tyc.jpg"}

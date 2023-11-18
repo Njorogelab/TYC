@@ -5,16 +5,17 @@ const OpportunitiesCard1 = ({}) => {
   return (
     <>
       <div className=" relative flex flex-col justify-start items-center gap-2.5 ">
-        <div className="flex flex-col items-center justify-start gap-16 p-20 text-white grow shrink basis-0">
-          <div className="flex flex-col items-start justify-start gap-12 ">
+        <div className="flex flex-col items-center justify-start gap-5 p-2 text-white md:gap-16 md:p-20 grow shrink basis-0">
+          
+          <div className="flex flex-col items-start justify-start gap-12 p-2 ">
             <div className="flex flex-col items-center justify-start gap-2 ">
-              <div className=" text-center  text-[42px] font-bold  ">
+              <div className=" text-center text-2xl  md:text-[42px] font-bold  ">
                 Explore and embrace opportunities for you
               </div>
             </div>
           </div>
 
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid gap-4 md:grid-cols-3">
 
             <div className="  border border-zinc-200 flex-col justify-start items-center gap-[5px] inline-flex">
              
