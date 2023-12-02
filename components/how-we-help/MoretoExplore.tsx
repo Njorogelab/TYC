@@ -1,16 +1,21 @@
 import { FC } from "react";
-import { Button } from "./ui/button";
-import { Icons } from "./Icons";
+import { Button } from "../ui/button";
+import { Icons } from "../Icons";
 
 const MoretoExplore = ({}) => {
   return (
     <>
-      <div className="w-full md:px-20 py-14 bg-[#810E0E] flex-col justify-start items-center inline-flex">
+      <div className="w-full md:px-20 py-14 bg-violet-100 flex-col justify-start items-center inline-flex">
         
-        <div className="flex flex-col items-start justify-start gap-12 md:h-14">
+        <div className="flex flex-col items-start justify-start gap-12 md:h-14 mb-6">
           <div className="flex flex-col items-center self-stretch justify-start gap-2 md:h-14">
-            <div className="self-stretch text-3xl font-bold leading-10 text-center text-white md:text-5xl">
+            <div className="self-stretch text-3xl font-bold leading-10 text-center text-primary md:text-5xl">
               More to explore
+            </div>
+            <div className="self-stretch  font-bold leading-10 text-center text-primarymd:text-2xl">
+              <p className=" my-3 font-bold leading-10 text-center text-primary md:text-2xl">
+              Contact us using the contact details above and we’ll be happy to help. Or check out the following pages to learn more about how TYC Africa Trust can help you.
+              </p>
             </div>
           </div>
         </div>

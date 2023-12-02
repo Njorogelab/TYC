@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 const GetInTouchCard = ({}) => {
   return (
     <div>
-      <div className="inline-flex items-center justify-start gap-20 md:p-20 bg-violet-100">
+      <div className="w-full inline-flex items-center justify-center gap-20 md:p-20 bg-violet-100">
         
         <div className="inline-flex flex-col items-center justify-start gap-16 px-2 py-8">
           

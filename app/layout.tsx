@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <head />
       <body className={poppins.className}>
-        <div className="flex flex-col min-h-screen ">
+        <div className="flex flex-col min-h-screen max-w-[1920px]">
           <div className="top-0 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
             <div className="border-b flex sm:h-20 md:h-52 items-center justify-between px-4 md:px-[80px] bg-navbar">
               <Link href={"/"}>
@@ -45,7 +45,7 @@ export default function RootLayout({
                   <Icons.search />
                 </div>
                 <div className="flex items-center gap-3 px-3 border-r">
-                  <Link href={"/"}>
+                  <Link href={"/support-us/donate"}>
                     <p className="block sm:text-sm md:text-xl"> Donate</p>{" "}
                   </Link>{" "}
                   <Icons.donate />

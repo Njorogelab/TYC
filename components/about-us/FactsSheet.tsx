@@ -1,12 +1,12 @@
 import {FC} from 'react'
 import Image from 'next/image'
-import { Button } from './ui/button'
-import { Icons } from './Icons'
+import { Button } from '../ui/button'
+import { Icons } from '../Icons'
 
-const SupportOurWorkCard = ({}) => {
+const FactsSheet = ({}) => {
    return <>
-    <div className='block min-h-[600px]'>
-    <div className='relative items-center md:py-16 md:flex'>
+    <div className='block min-h-[600px]  bg-slate-300'>
+    <div className='relative items-center md:py-16 md:flex bg-slate-300'>
 
         <div className='md:absolute h-full md:w-[55%]'>
             <div className='top-0 left-0 w-full h-full md:absolute '>
@@ -16,39 +16,29 @@ const SupportOurWorkCard = ({}) => {
             </div>
         </div>
 
-        <div className='md:ml-[50%] md:w-1/2 md:z-10 border-b-4 border-b-blue-700 bg-white px-4 relative md:top-2  flex flex-col items-center py-3 border'>
+        <div className='md:ml-[50%] md:w-1/2 md:z-10 border-b-4 border-b-blue-700 bg-slate-300 px-4 relative md:top-2  flex flex-col items-center py-3 border'>
             <div className='py-3 font-semibold'>
             <div className="py-3 font-semibold">
               <h2 className="px-2 text-2xl text-center">
-                Support Our Work
+                2021 - 2022 Facts and Figures
               </h2>
             </div>
-            <div className="pt-3 font-semibold">
-              <h2 className="px-2 text-2xl text-center">
-                Want to get involved?
-              </h2>
-            </div>
+            
             </div>
             
             <div className='grid gap-2 px-3 py-3 text-lg font-normal'>
+                
                 <div className='relative text-center '>
                     <p>
-                    Become a part of our journey in empowering African youth!</p>
+                    Last year we impacted over ----- young people into (jobs, education, counseling , etc) Find out more about our impact in young peoples lives</p>
                 </div>
-                <div className='relative text-center '>
-                    <p>
-                    Your support matters. Whether you&apos;re keen on volunteering, partnering with us, or contributing to our mission, there&apos;s a place for your passion at TYC Africa Trust.</p>
-                </div>
-                <div className='relative text-center '>
-                    <p>
-                    Explore the diverse ways you can get involved and make a difference.</p>
-                </div>
+                
             </div>
            
            <div className='flex items-center pb-2'>
             
             <Button className='flex justify-betweenpy-4 px-8 transition-transform duration-1000 transform -skew-x-12 gap-1 shadow-[10px_8px_0px_rgba(29,78,216,1)] hover:shadow-[15px_8px_0px_rgba(29,78,216,1)]'>
-                <span>Explore</span>
+                <span>Download</span>
                 <Icons.right/>
             </Button>
            </div>
@@ -59,4 +49,4 @@ const SupportOurWorkCard = ({}) => {
    </>
 }
 
-export default SupportOurWorkCard
+export default FactsSheet

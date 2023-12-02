@@ -5,7 +5,7 @@ import { Button } from './ui/button'
 
 const LandingSection1 = ({}) => {
    return <>
-    <div className='block '>
+    <div className='block min-h-[600px]'>
     <div className='relative items-center '>
 
         <div className='md:absolute md:h-full md:w-[55%]'>
