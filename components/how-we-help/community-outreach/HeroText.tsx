@@ -28,7 +28,7 @@ change. Join us in protecting and preserving our planet
           <p className="text-2xl font-semibold  py-3 md:px-2">
           <Link href={'/'} className="underline">Community Development Projects:</Link> Collaborate with communities to 
 implement projects that enhance infrastructure, education, healthcare, and 
-access to clean water. Make a tangible impact on people's lives
+access to clean water. Make a tangible impact on people&apos;s lives
         </p>
           </li>
           <li>

@@ -22,7 +22,7 @@ const OpportunitiesCard1 = ({}) => {
                   </div>
                 </div>
                 <div className="self-stretch text-2xl font-normal  leading-[33.60px]">
-                Our Youth Development program is a cornerstone at TYC Africa Trust. It's dedicated to equipping young individuals with the skills, knowledge, and experiences that pave the way for leadership and success
+                Our Youth Development program is a cornerstone at TYC Africa Trust. It&apos;s dedicated to equipping young individuals with the skills, knowledge, and experiences that pave the way for leadership and success
                 </div>
               </div>
               <div className=" gap-4 p-4 ">

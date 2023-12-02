@@ -39,7 +39,7 @@ wellness, community impact, and more.</p>
                 </div>
                 <div className="self-stretch text-2xl font-normal  leading-[33.60px]">
                 Be inspired by success stories of individuals who have 
-thrived through TYC Africa Trust's programs. Learn from their journeys and 
+thrived through TYC Africa Trust&apos;s programs. Learn from their journeys and 
 discover the possibilities that await you.
                 </div>
               </div>

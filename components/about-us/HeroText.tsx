@@ -23,7 +23,7 @@ to the cause of youth development.
 
       <div className="flex items-center md:px-12">
         <p className="text-2xl font-semibold text-center md:px-2">
-        Learn about our history, the structure that guides our efforts, and our unwavering commitment to making a positive impact. Discover what sets us apart and how we're dedicated to shaping resilient, responsible, and confident young adults.        </p>
+        Learn about our history, the structure that guides our efforts, and our unwavering commitment to making a positive impact. Discover what sets us apart and how we&apos;re dedicated to shaping resilient, responsible, and confident young adults.        </p>
       </div>
 
       

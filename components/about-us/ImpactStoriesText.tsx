@@ -13,7 +13,7 @@ const ImpactStoriesText = () => {
         <ul className=" list-outside list-disc">
           <li>
           <p className="text-2xl font-semibold text-center md:px-2">
-        <span className="underline">Proven Impact: </span>Over the years, we&apos;ve witnessed countless success stories of individuals whose lives have been transformed through TYC Africa Trust's programs.</p>
+        <span className="underline">Proven Impact: </span>Over the years, we&apos;ve witnessed countless success stories of individuals whose lives have been transformed through TYC Africa Trust&apos;s programs.</p>
           </li>
           <li>
           <p className="text-2xl font-semibold text-center md:px-2">
