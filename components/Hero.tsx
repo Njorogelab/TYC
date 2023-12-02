@@ -29,7 +29,7 @@ const Hero = () => {
         height="1080"
         src="mevv8tnxabpoem4tde7k"
         fluid={true}
-        controls={false}
+      
         muted={true}
         hideContextMenu={true}
         autoPlay="always"
