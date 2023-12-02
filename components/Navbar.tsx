@@ -111,16 +111,16 @@ const Navbar = () => {
               <div id="help" style={{display: activeTab==='help'? 'block':'none'}}>
                 <ul className="flex flex-col font-[700] underline gap-3">
                   <li>
-                    <Link href="/">Youth Development Hub</Link>
+                    <Link href="/how-we-help/youth-development-hub">Youth Development Hub</Link>
                   </li>
                   <li>
-                    <Link href="/">Talent Discovery</Link>
+                    <Link href="/how-we-help/talent-discovery">Talent Discovery</Link>
                   </li>
                   <li>
-                    <Link href="/">Resilience Building</Link>
+                    <Link href="/how-we-help/resilience-building">Resilience Building</Link>
                   </li>
                   <li>
-                    <Link href="/">Community Outreach</Link>
+                    <Link href="/how-we-help/community-outreach">Community Outreach</Link>
                   </li>
                 </ul>
               </div>
@@ -128,7 +128,7 @@ const Navbar = () => {
               <div id="support" style={{display: activeTab==='support'? 'block':'none'}}>
                 <ul className="flex flex-col font-[700] underline gap-3">
                   <li>
-                    <Link href="/">Donate</Link>
+                    <Link href="/support-us/donate">Donate</Link>
                   </li>
                   <li>
                     <Link href="/">Become a Youth Ambassador</Link>
@@ -174,7 +174,7 @@ const Navbar = () => {
               <div id="partner" style={{display: activeTab==='about'? 'block':'none'}}>
                 <ul className="flex flex-col font-[700] underline gap-3">
                   <li>
-                    <Link href="/">Our mission</Link>
+                    <Link href="/about-us">About us</Link>
                   </li>
                   <li>
                     <Link href="/">Our latest initiatives</Link>
@@ -203,7 +203,7 @@ const Navbar = () => {
               <div id="partner" style={{display: activeTab==='resources'? 'block':'none'}}>
                 <ul className="flex flex-col font-[700] underline gap-3">
                   <li>
-                    <Link href="/">Education Materials</Link>
+                    <Link href="/resources-at-tyc-africa-trust">Resources</Link>
                   </li>
                   <li>
                     <Link href="/">Expert Advice</Link>
