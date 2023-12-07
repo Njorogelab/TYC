@@ -2,6 +2,7 @@ import { FC } from "react";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { Icons } from "./Icons";
+import Link from "next/link";
 
 const AnnualConferenceCard = ({}) => {
   return (
@@ -12,7 +13,7 @@ const AnnualConferenceCard = ({}) => {
           <div className="md:mr-[50%] md:w-1/2 md:z-10 border-b-4 border-b-black bg-white md:px-4 relative md:top-6 flex items-center flex-col">
             <div className="py-3 font-semibold">
               <h2 className="px-2 text-2xl text-center">
-                The Annual Youth Conference{" "}
+                The Annual Youth Conference
               </h2>
             </div>
             <div className="py-3 font-semibold">
@@ -35,10 +36,12 @@ const AnnualConferenceCard = ({}) => {
 
             <div className='flex items-center pb-4'>
             
-            <Button className='flex justify-betweenpy-4 px-8 transition-transform duration-1000 transform -skew-x-12 gap-1 shadow-[10px_8px_0px_rgba(185,28,28,1)] hover:shadow-[15px_8px_0px_rgba(185,28,28,1)]'>
+            <Link href={'https://forms.gle/2vatDWT7Pu16gJ646'}>
+            <Button className='flex justify-betweenpy-4 px-8 transition-transform duration-1000 transform -skew-x-12 gap-1 shadow-[10px_8px_0px_rgba(185,28,28,1)] hover:shadow-[15px_8px_0px_rgba(185,28,28,1)]' 
+            >
                 <span>Register</span>
                 <Icons.right/>
-            </Button>
+            </Button></Link>
            </div>
            
           </div>

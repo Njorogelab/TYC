@@ -2,11 +2,12 @@ import {FC} from 'react'
 import Image from 'next/image'
 import { Button } from './ui/button'
 import { Icons } from './Icons'
+import Link from 'next/link'
 
 const SupportOurWorkCard = ({}) => {
    return <>
-    <div className='block min-h-[600px]'>
-    <div className='relative items-center md:py-16 md:flex'>
+    <div className='block min-h-max'>
+    <div className='relative items-center  md:flex'>
 
         <div className='md:absolute h-full md:w-[55%]'>
             <div className='top-0 left-0 w-full h-full md:absolute '>
@@ -16,7 +17,7 @@ const SupportOurWorkCard = ({}) => {
             </div>
         </div>
 
-        <div className='md:ml-[50%] md:w-1/2 md:z-10 border-b-4 border-b-blue-700 bg-white px-4 relative md:top-2  flex flex-col items-center py-3 border'>
+    <div className='md:ml-[50%] md:w-1/2 md:z-10 md:top-3 border-b-4 border-b-blue-700 bg-white md:px-4 relative md:place-content-center  flex flex-col items-center  border'>
             <div className='py-3 font-semibold'>
             <div className="py-3 font-semibold">
               <h2 className="px-2 text-2xl text-center">
@@ -47,10 +48,11 @@ const SupportOurWorkCard = ({}) => {
            
            <div className='flex items-center pb-2'>
             
-            <Button className='flex justify-betweenpy-4 px-8 transition-transform duration-1000 transform -skew-x-12 gap-1 shadow-[10px_8px_0px_rgba(29,78,216,1)] hover:shadow-[15px_8px_0px_rgba(29,78,216,1)]'>
+           <Link href={'/support-us'}>
+            <Button className='flex justify-betweenpy-4 px-8 my-4 transition-transform duration-1000 transform -skew-x-12 gap-1 shadow-[10px_8px_0px_rgba(29,78,216,1)] hover:shadow-[15px_8px_0px_rgba(29,78,216,1)]'>
                 <span>Explore</span>
                 <Icons.right/>
-            </Button>
+            </Button></Link>
            </div>
 
         </div>

@@ -41,7 +41,7 @@ const OpportunitiesCard1 = ({}) => {
                 <div className=" gap-4 py-4 pr-2 ">
                   <div className=" ">
                     <div className="text-xl font-medium leading-tight tracking-wide underline flex justify-between w-full">
-                     <Link href={'/'}>Start a journey to success</Link> <Icons.right/>
+                     <Link href={'/resources-at-tyc-africa-trust'}>Start a journey to success</Link> <Icons.right/>
                     </div>
                   </div>
                   <div className="relative w-6 h-6" />
@@ -70,7 +70,7 @@ const OpportunitiesCard1 = ({}) => {
                 <div className=" gap-4 py-4 pr-2 ">
                   <div className=" ">
                     <div className="text-xl font-medium leading-tight tracking-wide underline flex justify-between w-full">
-                     <Link href={'/'}>Broaden your skill set</Link> <Icons.right/>
+                     <Link href={'/resources-at-tyc-africa-trust'}>Broaden your skill set</Link> <Icons.right/>
                     </div>
                   </div>
                   <div className="relative w-6 h-6" />
@@ -98,7 +98,7 @@ const OpportunitiesCard1 = ({}) => {
                 <div className=" gap-4 py-4 pr-2 ">
                   <div className=" ">
                     <div className="text-xl font-medium leading-tight tracking-wide underline flex justify-between w-full">
-                     <Link href={'/'}>A path to self discovery</Link> <Icons.right/>
+                     <Link href={'/how-we-help/resilience-building'}>A path to self discovery</Link> <Icons.right/>
                     </div>
                   </div>
                   <div className="relative w-6 h-6" />
@@ -116,7 +116,7 @@ const OpportunitiesCard1 = ({}) => {
               <div className="flex flex-col items-start self-stretch justify-start gap-4 px-4 pt-6 pb-4">
                 <div className="flex flex-col items-start justify-start gap-1 ">
                   <div className="self-stretch  text-[40px] font-bold  leading-[44px]">
-                    Join us atour Annual Youth conference
+                    Join us at our Annual Youth conference
                   </div>
                 </div>
                 <div className="self-stretch text-2xl font-normal  leading-[33.60px]">
@@ -126,7 +126,7 @@ const OpportunitiesCard1 = ({}) => {
                 <div className=" gap-4 py-4 pr-2 ">
                   <div className=" ">
                     <div className="text-xl font-medium leading-tight tracking-wide underline flex justify-between w-full">
-                     <Link href={'/'}>Explore conference details</Link> <Icons.right/>
+                     <Link href={'https://forms.gle/2vatDWT7Pu16gJ646'}>Explore conference details</Link> <Icons.right/>
                     </div>
                   </div>
                   <div className="relative w-6 h-6" />

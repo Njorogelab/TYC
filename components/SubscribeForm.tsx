@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const SubscribeForm = ({}) => {
   return (
@@ -17,7 +18,7 @@ const SubscribeForm = ({}) => {
                 </div>
               </div>
              
-              <div className="text-3xl font-normal md:h-28 text-teal-950">
+              <div className="text-2xl font-normal md:h-28 text-teal-950">
                 If you’d like to stay updated with our latest news and info, subscribe today
               </div>
             </div>
@@ -32,27 +33,26 @@ const SubscribeForm = ({}) => {
               
               <Input placeholder="Last name"/>
             </div>
-            <div className="inline-flex items-center self-stretch justify-start gap-4">
+            <div className="md:inline-flex items-center self-stretch justify-start gap-1 md:gap-4">
               <div className="flex items-center justify-start h-12 gap-2 px-4 py-3 grow shrink basis-0 ">
-                
                 
                 <Input placeholder="Email" type="email"/>
               </div>
-              <div className="flex items-center justify-center px-3 py-4 ">
-                <div className=" justify-center items-center gap-2.5 flex">
-                  
+              <div className=" px-3 py-4 ">
+                <div className="w-full">
                   <Button type="submit">Subscribe</Button>
                 </div>
               </div>
             </div>
             <div className="h-20 text-center ">
-              <span className="text-xl font-normal leading-7 ">
+              <span className="text-xl font-normal  ">
                 To understand how we will store and use your details please see
                 our{" "}
               </span>
-              <span className="text-xl font-normal leading-7 underline ">
+              <Link href={'/privacy-policy'}>
+              <span className="text-xl font-normal  underline ">
                 privacy policy
-              </span>
+              </span></Link>
             </div>
           </div>
         </div>

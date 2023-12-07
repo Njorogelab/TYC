@@ -28,14 +28,14 @@ const Hero = () => {
         width="1920"
         height="1080"
         src="mevv8tnxabpoem4tde7k"
-        fluid={true}
-      
-        muted={true}
-        hideContextMenu={true}
+        fluid
+        muted
+        controls
+        hideContextMenu
         autoPlay="always"
-        loop={true}
+        loop
         onDataLoad={handleVideoLoaded}
-        className={`${videoLoaded ? 'block' : 'hidden'} absolute w-full h-full`}
+        className={`${videoLoaded ? 'block' : 'hidden'} absolute z-20 w-full h-full`}
       />
 
      

@@ -2,10 +2,11 @@ import {FC} from 'react'
 import Image from 'next/image'
 import { Icons } from './Icons'
 import { Button } from './ui/button'
+import Link from 'next/link'
 
 const LandingSection1 = ({}) => {
    return <>
-    <div className='block min-h-[600px]'>
+    <div className='block '>
     <div className='relative items-center '>
 
         <div className='md:absolute md:h-full md:w-[55%]'>
@@ -16,7 +17,7 @@ const LandingSection1 = ({}) => {
             </div>
         </div>
 
-        <div className='md:ml-[50%] md:w-1/2 md:z-10 border-b-4 border-b-black bg-white px-4 relative md:top-10 flex items-center flex-col'>
+        <div className='md:ml-[50%] md:w-1/2 md:z-10 border-b-4 border-b-black bg-white md:px-4 relative md:top-5 flex items-center flex-col'>
             <div className='py-3 font-semibold'>
                 <h2 className='px-2 text-2xl text-center'>Unlocking Opportunities for Youth Success</h2>
             </div>
@@ -41,10 +42,13 @@ const LandingSection1 = ({}) => {
             
             <div className='flex items-center pb-4'>
             
+            <Link href={'/how-we-help'}>
             <Button className='flex justify-betweenpy-4 px-8 transition-transform duration-1000 transform -skew-x-12 gap-1 shadow-[10px_8px_0px_rgba(63,226,211,1)] hover:shadow-[15px_8px_0px_rgba(63,226,211,1)]'>
                 <span>Kick things off</span>
                 <Icons.right/>
             </Button>
+            </Link>
+            
            </div>
            
         </div>

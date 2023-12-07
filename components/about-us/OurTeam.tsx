@@ -2,6 +2,7 @@ import { FC } from "react";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { Icons } from "../Icons";
+import Link from "next/link";
 
 const OurTeam = ({}) => {
   return (
@@ -16,7 +17,7 @@ const OurTeam = ({}) => {
               </h2>
             </div>
             
-            <div className="px-3 py-3 text-lg font-normal">
+            <div className="px-3 py-3 text-xl font-normal">
               <div className="relative text-center whitespace-pre-wrap">
                 <p>
                 Meet the driving force behind TYC Africa Trust. Our team is a diverse blend of dedicated professionals, experts in youth development, mental health, education, and community engagement <br/> Together, we share a common goal: to be architects 
@@ -27,10 +28,11 @@ of positive change in the lives of young individuals.
 
             <div className='flex items-center pb-4'>
             
+            <Link href={'/about-us'}>
             <Button className='flex justify-betweenpy-4 px-8 transition-transform duration-1000 transform -skew-x-12 gap-1 shadow-[10px_8px_0px_rgba(100,116,139,1)] hover:shadow-[15px_8px_0px_rgba(100,116,139,1)]'>
                 <span>Meet the team</span>
                 <Icons.right/>
-            </Button>
+            </Button></Link>
            </div>
            
           </div>

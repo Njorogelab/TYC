@@ -40,11 +40,12 @@ const Navbar = () => {
                 // onMouseLeave={() => setActiveTab("null")}
                 className="hover:bg-[#F1F5F9] rounded-md p-2"
               >
+                <Link href={'/how-we-help'}>
                 <p className="font-[700]">How we help</p>
                 <p className="text-[#64748B] text-sm">
                   Our initiatives are designed to designed to foster personal
                   growth, leadership, and community engagement.
-                </p>
+                </p></Link>
               </div>
 
               <div
@@ -53,14 +54,15 @@ const Navbar = () => {
                 id="support"
                 className="hover:bg-[#F1F5F9] rounded-md p-2"
               >
+                <Link href={'/support-us'}>
                 <p className="font-[700]">Support</p>
                 <p className="text-[#64748B] text-sm">
                   Explore our programs, read inspiring stories, and consider
                   joining us in our mission to empower the next generation.
-                </p>
+                </p></Link>
               </div>
 
-              <div
+              {/* <div
                 onMouseEnter={() => setActiveTab("partner")}
                 // onMouseLeave={() => setActiveTab("null")}
                 id="partner"
@@ -71,7 +73,7 @@ const Navbar = () => {
                   Explore our programs, read inspiring stories, and consider
                   joining us in our mission to empower the next generation
                 </p>
-              </div>
+              </div> */}
 
               <div 
                 onMouseEnter={() => setActiveTab("about")}
@@ -89,20 +91,23 @@ const Navbar = () => {
                 onMouseEnter={() => setActiveTab("resources")}
                 // onMouseLeave={() => setActiveTab("null")}
                 className="hover:bg-[#F1F5F9] rounded-md p-2">
+                  <Link href={'/resources-at-tyc-africa-trust'}>
                 <p className="font-[700]">Resources at TYC Africa Trust</p>
                 <p className="text-[#64748B] text-sm">
                   Discover a wealth of educational materials, insightful blogs,
                   and valuable downloads to support your journey of personal
                   growth and development.
-                </p>
+                </p></Link>
               </div>
 
               <div className="hover:bg-[#F1F5F9] rounded-md p-2">
+              <Link href={'/contact-us'}>
                 <p className="font-[700]">Contact us</p>
                 <p className="text-[#64748B] text-sm">
                   Got questions about our programs, initiatives, or TYC Africa
                   Trust in general? We&apos;re here to provide answers and assistance
                 </p>
+                </Link>
               </div>
             </div>
             
@@ -131,22 +136,22 @@ const Navbar = () => {
                     <Link href="/support-us/donate">Donate</Link>
                   </li>
                   <li>
-                    <Link href="/">Become a Youth Ambassador</Link>
+                    <Link href="/support-us/youth-ambassador">Become a Youth Ambassador</Link>
                   </li>
                   <li>
-                    <Link href="/">Volunteer</Link>
+                    <Link href="/support-us/volunteer">Volunteer</Link>
                   </li>
                   <li>
-                    <Link href="/">Take part in an event</Link>
+                    <Link href="/support-us/events">Take part in an event</Link>
                   </li>
                   <li>
-                    <Link href="/">Legacy giving</Link>
+                    <Link href="/support-us/giving">Legacy giving</Link>
                   </li>
                   <li>
-                    <Link href="/">Large gifts</Link>
+                    <Link href="/support-us/giving">Large gifts</Link>
                   </li>
                   <li>
-                    <Link href="/">More options</Link>
+                    <Link href="/support-us/contact">More options</Link>
                   </li>
                 </ul>
               </div>
@@ -177,25 +182,25 @@ const Navbar = () => {
                     <Link href="/about-us">About us</Link>
                   </li>
                   <li>
-                    <Link href="/">Our latest initiatives</Link>
+                    <Link href="/about-us">Our latest initiatives</Link>
                   </li>
                   <li>
-                    <Link href="/">Our history</Link>
+                    <Link href="/about-us">Our history</Link>
                   </li>
                   <li>
-                    <Link href="/">Our people</Link>
+                    <Link href="/about-us">Our people</Link>
                   </li>
                   <li>
-                    <Link href="/">Our impact stories</Link>
+                    <Link href="/about-us">Our impact stories</Link>
                   </li>
                   <li>
-                    <Link href="/">Media centre</Link>
+                    <Link href="/about-us">Media centre</Link>
                   </li>
                   <li>
-                    <Link href="/">Our core values</Link>
+                    <Link href="/about-us">Our core values</Link>
                   </li>
                   <li>
-                    <Link href="/">Our events</Link>
+                    <Link href="/about-us">Our events</Link>
                   </li>
                 </ul>
               </div>
@@ -203,16 +208,22 @@ const Navbar = () => {
               <div id="partner" style={{display: activeTab==='resources'? 'block':'none'}}>
                 <ul className="flex flex-col font-[700] underline gap-3">
                   <li>
-                    <Link href="/resources-at-tyc-africa-trust">Resources</Link>
+                    <Link href="/resources-at-tyc-africa-trust" target="_blank">Youth Exchange Program</Link>
                   </li>
                   <li>
-                    <Link href="/">Expert Advice</Link>
+                    <Link href="/resources-at-tyc-africa-trust">Internships</Link>
                   </li>
                   <li>
-                    <Link href="/">Youth Perspectives</Link>
+                    <Link href="/resources-at-tyc-africa-trust">Success Stories</Link>
                   </li>
                   <li>
-                    <Link href="/">Events calendar</Link>
+                    <Link href="/resources-at-tyc-africa-trust">Expert Advice</Link>
+                  </li>
+                  <li>
+                    <Link href="/resources-at-tyc-africa-trust">Youth Perspectives</Link>
+                  </li>
+                  <li>
+                    <Link href="/resources-at-tyc-africa-trust">Events calendar</Link>
                   </li>
                   
                 </ul>
@@ -231,18 +242,18 @@ const Navbar = () => {
 
                 <div className="h-[12rem] block rounded">
                     <div className="h-full p-2 rounded bg-gradient-to-b from-[#DB4E66] via-[#A24688] to-[#4E3ABA]"></div>
-                    <p className="underline">Make a positive impact on communities</p>
+                    <p className="underline">Our community outreach program</p>
                 </div>
               </div>
 
-              <div id="support" style={{display: activeTab==='support'? 'grid':'none'}}>
-                <div className="h-[12rem]  rounded">
+              <div id="support" className="flex-col h-auto gap-3" style={{display: activeTab==='support'? 'grid':'none'}}>
+                <div className="h-[12rem] block rounded">
                     <div className="h-full p-2 rounded bg-gradient-to-b from-[#DB4E66] via-[#A24688] to-[#4E3ABA]"></div>
                     <p className="underline">Learn more about volunteering</p>
                 </div>
-                <div className="h-[12rem]  rounded">
+                <div className="h-[12rem] block rounded">
                     <div className="h-full p-2 rounded bg-gradient-to-b from-[#DB4E66] via-[#A24688] to-[#4E3ABA]"></div>
-                    <p className="underline">Make a positive impact on communities</p>
+                    <p className="underline">Making a positive impact on communities</p>
                 </div>
               </div>
 
@@ -250,7 +261,7 @@ const Navbar = () => {
 
                 <div className="h-[12rem]  block rounded">
                     <div className="h-full p-2 rounded bg-gradient-to-b from-[#DB4E66] via-[#A24688] to-[#4E3ABA]"></div>
-                    <p className="underline">Join us in our Annual Youth Conference</p>
+                    <p className="underline">Education Development Programs with TYC</p>
                 </div>
 
                 <div className="h-[12rem] block rounded">

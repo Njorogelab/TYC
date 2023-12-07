@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { Icons } from "./Icons";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const GetInTouchCard = ({}) => {
   return (
@@ -14,7 +15,7 @@ const GetInTouchCard = ({}) => {
               <div className="text-4xl font-bold leading-10 text-center md:text-5xl text-zinc-800">
                 Get in touch
               </div>
-              <div className="text-3xl font-normal leading-10 text-center text-zinc-800">
+              <div className="text-2xl font-normal leading-10 text-center text-zinc-800">
                 Want to know how we can be of service? Share your thoughts with
                 us!
               </div>
@@ -74,9 +75,10 @@ const GetInTouchCard = ({}) => {
               <br />
               Outside these hours, you can{" "}
             </span>
+            <Link href={'mailto:enquiries@tycafricatrust.org'}>
             <span className="text-2xl font-normal leading-10 underline text-zinc-800">
               send us an email
-            </span>
+            </span></Link>
             <span className="text-2xl font-normal leading-10 text-zinc-800">
               {" "}
               and we’ll get back to you when we’re back online.

@@ -7,7 +7,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./
 const Footer = ({}) => {
   return (
     <>
-      <div className="inline-flex flex-col items-start justify-between w-full gap-12 px-20 py-12 bg-neutral-950">
+      <div className="inline-flex flex-col items-start justify-between w-full gap-12 px-7 md:px-20 py-12 bg-neutral-950">
 
         <div className="inline-flex items-center self-stretch justify-start gap-12">
           
@@ -27,13 +27,13 @@ const Footer = ({}) => {
               </div>
               
               <div className="p-2 text-xl text-white">
-                <p className="grid justify-end ">Join Us</p>
+                <p className="grid justify-end underline p-1 ">Join Us</p>
                 <div className="flex gap-2">
-                  <Icons.youtube className="md:h-9 md:w-9"/>
-                  <Icons.twitter className="md:h-9 md:w-9"/>
-                  <Icons.facebook className="md:h-9 md:w-9"/>
-                  <Icons.Instagram className="md:h-9 md:w-9"/>
-                  <Icons.linkedin className="md:h-9 md:w-9"/>
+                <Link href={'/'}><Icons.youtube className="md:h-9 md:w-9"/></Link>
+                <Link href={'/'}><Icons.twitter className="md:h-9 md:w-9"/></Link>
+                <Link href={'/'}><Icons.facebook className="md:h-9 md:w-9"/></Link>
+                <Link href={'/'}><Icons.Instagram className="md:h-9 md:w-9"/></Link>
+                <Link href={'/'}><Icons.linkedin className="md:h-9 md:w-9"/></Link>
 
                 </div>
               </div>
@@ -53,22 +53,22 @@ const Footer = ({}) => {
             </div>
             <div className="inline-flex items-center justify-start gap-2">
               <div className="text-base font-medium leading-none text-white">
-                How we help
+              <Link href={'/how-we-help'}>How we help</Link>
               </div>
             </div>
             <div className="inline-flex items-center justify-start gap-2">
               <div className="text-base font-medium leading-none text-white">
-                Support us
+              <Link href={'/support-us'}>Support us</Link>
               </div>
             </div>
             <div className="inline-flex items-center justify-start gap-2">
               <div className="text-base font-medium leading-none text-white">
-                Partner with us
+              <Link href={'/partner'}>Partner with us</Link>
               </div>
             </div>
             <div className="inline-flex items-center justify-start gap-2">
               <div className="text-base font-medium leading-none text-white">
-                About us
+              <Link href={'/about-us'}>About us</Link>
               </div>
             </div>
           </div>
@@ -81,17 +81,17 @@ const Footer = ({}) => {
             </div>
             <div className="inline-flex items-center justify-start gap-2">
               <div className="text-base font-medium leading-none text-white">
-                Donate
+              <Link href={'/support-us/donate'}>Donate</Link>
               </div>
             </div>
             <div className="inline-flex items-center justify-start gap-2">
               <div className="text-base font-medium leading-none text-white">
-                Frequently Asked Questions
+              <Link href={'/frequently-asked-questions'}>Frequently Asked Questions</Link>
               </div>
             </div>
             <div className="inline-flex items-center justify-start gap-2">
               <div className="text-base font-medium leading-none text-white">
-                Careers
+              <Link href={'/'}>Careers</Link>
               </div>
             </div>
             
@@ -105,17 +105,17 @@ const Footer = ({}) => {
             </div>
             <div className="inline-flex items-center justify-start gap-2">
               <div className="text-base font-medium leading-none text-white">
-                Become an Ambassador
+              <Link href={'/support-us/youth-ambassador'}>Become a Youth Ambassador</Link>
               </div>
             </div>
             <div className="inline-flex items-center justify-start gap-2">
               <div className="text-base font-medium leading-none text-white">
-                Media Centre
+              <Link href={'/gallery'}>Gallery</Link>
               </div>
             </div>
             <div className="inline-flex items-center justify-start gap-2">
               <div className="text-base font-medium leading-none text-white">
-                Get in touch
+              <Link href={'/contact-us'}>Get in touch</Link>
               </div>
             </div>
             
@@ -127,19 +127,19 @@ const Footer = ({}) => {
           <Accordion type="single" collapsible className="w-full text-white">
           <AccordionItem value="item-1">
         <AccordionTrigger>Navigate</AccordionTrigger>
-        <AccordionContent className="px-3 text-white bg-gray-500 rounded-md">
+        <AccordionContent className="px-3 mb-2 text-white bg-gray-500 rounded-md">
         <ul className="flex flex-col font-[700] underline gap-3">
                   <li>
-                    <Link href="/">How we help</Link>
+                    <Link href="/how-we-help">How we help</Link>
                   </li>
                   <li>
-                    <Link href="/">Support us</Link>
+                    <Link href="/support-us">Support us</Link>
                   </li>
                   <li>
-                    <Link href="/">Partner with us</Link>
+                    <Link href="/partner">Partner with us</Link>
                   </li>
                   <li>
-                    <Link href="/">About us</Link>
+                    <Link href="/about-us">About us</Link>
                   </li>
                   
                   
@@ -148,16 +148,16 @@ const Footer = ({}) => {
       </AccordionItem>
       <AccordionItem value="item-2">
         <AccordionTrigger>Quick Links</AccordionTrigger>
-        <AccordionContent className="px-3 text-white bg-gray-500 rounded-md">
+        <AccordionContent className="px-3 mb-2 text-white bg-gray-500 rounded-md">
         <ul className="flex flex-col font-[700] underline gap-3">
                   <li>
-                    <Link href="/">Donate</Link>
+                    <Link href="/support-us/donate">Donate</Link>
                   </li>
                   <li>
-                    <Link href="/">Frequently Asked Questions</Link>
+                    <Link href="/freaquently-asked-questions">Frequently Asked Questions</Link>
                   </li>
                   <li>
-                    <Link href="/">Careers</Link>
+                    <Link href="/careers">Careers</Link>
                   </li>
                   
                   
@@ -166,16 +166,16 @@ const Footer = ({}) => {
       </AccordionItem>
       <AccordionItem value="item-3">
         <AccordionTrigger>Information Centre</AccordionTrigger>
-        <AccordionContent className="px-3 text-white bg-gray-500 rounded-md">
+        <AccordionContent className="px-3 mb-2 text-white bg-gray-500 rounded-md">
         <ul className="flex flex-col font-[700] underline gap-3">
                   <li>
-                    <Link href="/">Become a Youth Ambassador</Link>
+                    <Link href="/support-us/youth-ambassador">Become a Youth Ambassador</Link>
                   </li>
                   <li>
-                    <Link href="/">Media Centre</Link>
+                    <Link href="/gallery">Gallery</Link>
                   </li>
                   <li>
-                    <Link href="/">Get in touch</Link>
+                    <Link href="/contact-us">Get in touch</Link>
                   </li>
                   
                   
@@ -195,22 +195,12 @@ const Footer = ({}) => {
               <div className="text-base font-medium leading-none text-white">
                 <Link
                   className="underline" 
-                  href={"/"}>
+                  href={"/privacy-policy"}>
                 Privacy Policy
                 </Link>
                 
               </div>
             </div>
-            {/* <div className="flex items-center justify-start gap-2 px-2 py-3">
-              <div className="text-base font-medium leading-none text-white">
-                Twelve
-              </div>
-            </div>
-            <div className="flex items-center justify-start gap-2 px-2 py-3">
-              <div className="text-base font-medium leading-none text-white">
-                Thirteen
-              </div>
-            </div> */}
           </div>
         </div>
       </div>

@@ -7,6 +7,7 @@ import Image from "next/image";
 import { Icons } from "@/components/Icons";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import logo from '@/public/TYC-Logo-Large.svg'
 
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({ weight: "400", subsets: ["latin"] });
@@ -31,7 +32,7 @@ export default function RootLayout({
               <Link href={"/"}>
                 <Image
                 
-                  src={"TYC-Logo-Large.svg"}
+                  src={logo}
                   alt={"TYC Africa Logo"}
                   width={160}
                   height={144}

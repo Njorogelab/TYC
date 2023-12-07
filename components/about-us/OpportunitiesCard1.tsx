@@ -29,7 +29,7 @@ const OpportunitiesCard1 = ({}) => {
                     Our Initiates
                   </div>
                 </div>
-                <div className="self-stretch text-2xl font-normal  leading-[33.60px]">
+                <div className="self-stretch text-xl font-normal  leading-[33.60px]">
                 Discover the diverse array of initiatives driving our mission. From empowering youth development to fostering mental wellness and contributing to community outreach, explore the heart of our efforts.
                 </div>
               </div>
@@ -37,7 +37,7 @@ const OpportunitiesCard1 = ({}) => {
                 <div className=" gap-4 py-4 ">
                   <div className=" ">
                     <div className="text-xl font-medium leading-tight tracking-wide underline flex justify-between w-full">
-                     <Link href={'/'}>Learn more</Link> <Icons.right/>
+                     <Link href={'/about-us'}>Learn more</Link> <Icons.right/>
                     </div>
                   </div>
                   <div className="relative w-6 h-6" />
@@ -60,7 +60,7 @@ const OpportunitiesCard1 = ({}) => {
                     Our History
                   </div>
                 </div>
-                <div className="self-stretch text-2xl font-normal  leading-[33.60px]">
+                <div className="self-stretch text-xl font-normal  leading-[33.60px]">
                 Dive into our rich history. Learn about the inception, growth, and milestones that define our path, shaping the present and paving the way for our future endeavors..
                 </div>
               </div>
@@ -68,7 +68,7 @@ const OpportunitiesCard1 = ({}) => {
                 <div className=" gap-4 py-4 pr-2 ">
                   <div className=" ">
                     <div className="text-xl font-medium leading-tight tracking-wide underline flex justify-between w-full">
-                     <Link href={'/'}>Learn more</Link> <Icons.right/>
+                     <Link href={'/about-us'}>Learn more</Link> <Icons.right/>
                     </div>
                   </div>
                   <div className="relative w-6 h-6" />
@@ -91,14 +91,14 @@ const OpportunitiesCard1 = ({}) => {
                     Our Stories
                   </div>
                 </div>
-                <div className="self-stretch text-2xl font-normal  leading-[33.60px]">
+                <div className="self-stretch text-xl font-normal  leading-[33.60px]">
                 Explore the compelling narratives and impactful stories that embody the essence of TYC Africa Trust. From transformational success stories to the narratives of change, our stories exemplify the spirit of our mission.             </div>
               </div>
               <div className=" gap-4 p-4 ">
                 <div className=" gap-4 py-4 pr-2 ">
                   <div className=" ">
                     <div className="text-xl font-medium leading-tight tracking-wide underline flex justify-between w-full">
-                     <Link href={'/'}>Learn more</Link> <Icons.right/>
+                     <Link href={'/about-us'}>Learn more</Link> <Icons.right/>
                     </div>
                   </div>
                   <div className="relative w-6 h-6" />
@@ -121,14 +121,14 @@ const OpportunitiesCard1 = ({}) => {
                     Our People
                   </div>
                 </div>
-                <div className="self-stretch text-2xl font-normal  leading-[33.60px]">
+                <div className="self-stretch text-xl font-normal  leading-[33.60px]">
                 Meet the inspiring minds that shape the heart of TYC Africa Trust. Learn about the dedicated individuals behind our vision and their contributions to empowering youth and transforming communities            </div>
               </div>
               <div className=" gap-4 p-4 ">
                 <div className=" gap-4 py-4 pr-2 ">
                   <div className=" ">
                     <div className="text-xl font-medium leading-tight tracking-wide underline flex justify-between w-full">
-                     <Link href={'/'}>Learn more</Link> <Icons.right/>
+                     <Link href={'/about-us'}>Learn more</Link> <Icons.right/>
                     </div>
                   </div>
                   <div className="relative w-6 h-6" />
@@ -151,14 +151,14 @@ const OpportunitiesCard1 = ({}) => {
                     Events Calendar
                   </div>
                 </div>
-                <div className="self-stretch text-2xl font-normal  leading-[33.60px]">
+                <div className="self-stretch text-xl font-normal  leading-[33.60px]">
                 Stay updated on our upcoming events, conferences, and gatherings. Dive into a calendar brimming with opportunities to connect, learn, and collaborate.            </div>
               </div>
               <div className=" gap-4 p-4 ">
                 <div className=" gap-4 py-4 pr-2 ">
                   <div className=" ">
                     <div className="text-xl font-medium leading-tight tracking-wide underline flex justify-between w-full">
-                     <Link href={'/'}>Learn more</Link> <Icons.right/>
+                     <Link href={'/about-us'}>Learn more</Link> <Icons.right/>
                     </div>
                   </div>
                   <div className="relative w-6 h-6" />

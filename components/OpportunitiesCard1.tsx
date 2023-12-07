@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FC } from "react";
 
 const OpportunitiesCard1 = ({}) => {
@@ -26,11 +27,11 @@ const OpportunitiesCard1 = ({}) => {
                 height: '400px',}}></Image>
               <div className="flex flex-col items-start self-stretch justify-start gap-4 px-4 pt-6 pb-4">
                 <div className="flex flex-col items-start justify-start gap-1 ">
-                  <div className="self-stretch  text-[40px] font-bold  leading-[44px]">
+                  <div className=" text-2xl md:text-[40px] font-bold  md:leading-[44px]">
                     Get Inspired
                   </div>
                 </div>
-                <div className="self-stretch text-2xl font-normal  leading-[33.60px]">
+                <div className="self-stretch text-xl font-normal  leading-[33.60px]">
                   Develop life skills by joining our conferences, workshops,
                   seminars and mentorship programs
                 </div>
@@ -39,7 +40,7 @@ const OpportunitiesCard1 = ({}) => {
                 <div className="flex items-center justify-center gap-4 py-4 pr-2 ">
                   <div className="flex items-center justify-center">
                     <div className="text-xl font-medium leading-tight tracking-wide underline ">
-                      Discover your strength and confidence.
+                     <Link href={'/how-we-help/youth-development-hub'}> Discover your strength and confidence.</Link>
                     </div>
                   </div>
                   <div className="relative w-6 h-6" />
@@ -57,7 +58,7 @@ const OpportunitiesCard1 = ({}) => {
 
               <div className="flex flex-col items-start self-stretch justify-start gap-4 px-4 pt-6 pb-4">
                 <div className="flex flex-col items-start justify-start gap-1 ">
-                  <div className="self-stretch  text-[40px] font-bold  leading-[44px]">
+                  <div className="text-2xl md:text-[40px] font-bold  md:leading-[44px]">
                     Get Empowered
                   </div>
                 </div>
@@ -72,7 +73,7 @@ const OpportunitiesCard1 = ({}) => {
                 <div className="flex items-center justify-between h-12 py-4 pr-2 grow shrink basis-0">
                   <div className="flex items-center justify-center">
                     <div className="text-xl font-medium leading-tight tracking-wide underline ">
-                      Build skills for work
+                    <Link href={'/how-we-help'}>Build skills for work</Link>
                     </div>
                   </div>
                   <div className="relative w-6 h-6" />
@@ -91,7 +92,7 @@ const OpportunitiesCard1 = ({}) => {
               
               <div className="flex flex-col items-start self-stretch justify-start gap-4 px-4 pt-6 pb-4">
                 <div className="flex flex-col items-start justify-start gap-1 ">
-                  <div className="self-stretch  text-[40px] font-bold  leading-[44px]">
+                  <div className="text-2xl md:text-[40px] font-bold  md:leading-[44px]">
                     Get Involved
                   </div>
                 </div>
@@ -104,7 +105,7 @@ const OpportunitiesCard1 = ({}) => {
                 <div className="flex items-center justify-between h-12 py-4 pr-2 grow shrink basis-0">
                   <div className="flex items-center justify-center">
                     <div className="text-xl font-medium leading-tight tracking-wide underline ">
-                      Explore activities
+                    <Link href={'/how-we-help/community-outreach'}>Explore activities</Link>
                     </div>
                   </div>
                   <div className="relative w-6 h-6" />
