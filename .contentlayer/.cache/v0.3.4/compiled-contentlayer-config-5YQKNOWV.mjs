@@ -122,6 +122,25 @@ var ExpertOpinion = defineDocumentType(() => ({
   },
   computedFields
 }));
+var CoreValue = defineDocumentType(() => ({
+  name: "CoreValue",
+  filePathPattern: `core-values/**/*.mdx`,
+  contentType: "mdx",
+  fields: {
+    title: {
+      type: "string",
+      required: true
+    },
+    description: {
+      type: "string"
+    },
+    image: {
+      type: "string",
+      required: true
+    }
+  },
+  computedFields
+}));
 var Author = defineDocumentType(() => ({
   name: "Author",
   filePathPattern: `authors/**/*.mdx`,
@@ -143,7 +162,7 @@ var Author = defineDocumentType(() => ({
 }));
 var contentlayer_config_default = makeSource({
   contentDirPath: "./content",
-  documentTypes: [Author, Successstory, YouthPerspective, ExpertOpinion],
+  documentTypes: [Author, Successstory, YouthPerspective, ExpertOpinion, CoreValue],
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [
@@ -179,9 +198,10 @@ var contentlayer_config_default = makeSource({
 });
 export {
   Author,
+  CoreValue,
   ExpertOpinion,
   Successstory,
   YouthPerspective,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-5QQQRIDZ.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-5YQKNOWV.mjs.map

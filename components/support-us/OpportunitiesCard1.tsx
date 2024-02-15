@@ -15,7 +15,7 @@ const OpportunitiesCard1 = ({}) => {
 
             <div className="  border border-zinc-200 flex-col  items-center gap-[5px] ">
              
-              <Image src={"/images/cardpicture3.png"} alt={""} height={400} width={400} sizes="100vw"
+              <Image src={"/images/new/photo1.jpg"} alt={""} height={400} width={400} sizes="100vw"
               // Make the image display full width
               style={{
                 width: '100%',
@@ -44,7 +44,7 @@ const OpportunitiesCard1 = ({}) => {
 
             <div className="  border border-zinc-200 flex-col  items-center gap-[5px] ">
              
-              <Image src={"/images/cardpicture2.png"} alt={""} height={400} width={400} sizes="100vw"
+              <Image src={"/images/new/photo4.jpg"} alt={""} height={400} width={400} sizes="100vw"
               // Make the image display full width
               style={{
                 width: '100%',
@@ -73,7 +73,7 @@ const OpportunitiesCard1 = ({}) => {
 
             <div className="  border border-zinc-200 flex-col  items-center gap-[5px] ">
              
-              <Image src={"/images/cardpicture1.png"} alt={""} height={400} width={400} sizes="100vw"
+              <Image src={"/images/use/image031.jpg"} alt={""} height={400} width={400} sizes="100vw"
               // Make the image display full width
               style={{
                 width: '100%',
@@ -101,7 +101,7 @@ const OpportunitiesCard1 = ({}) => {
 
             <div className="  border border-zinc-200 flex-col  items-center gap-[5px] ">
              
-              <Image src={"/images/photo4.png"} alt={""} height={400} width={400} sizes="100vw"
+              <Image src={"/images/use/image023.jpg"} alt={""} height={400} width={400} sizes="100vw"
               // Make the image display full width
               style={{
                 width: '100%',

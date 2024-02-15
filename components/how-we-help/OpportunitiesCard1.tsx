@@ -33,7 +33,7 @@ const OpportunitiesCard1 = ({}) => {
                 <div className=" gap-4 py-4 pr-2 ">
                   <div className=" ">
                     <div className="text-xl font-medium leading-tight tracking-wide underline flex justify-between w-full">
-                     <Link href={'/how-we-help/youth-dvelopment-program'}>Learn more</Link> <Icons.right/>
+                     <Link href={'/how-we-help'}>Learn more</Link> <Icons.right/>
                     </div>
                   </div>
                   <div className="relative w-6 h-6" />
@@ -43,7 +43,7 @@ const OpportunitiesCard1 = ({}) => {
 
             <div className="  border border-zinc-200 flex-col  items-center gap-[5px] ">
              
-              <Image src={"/images/cardpicture2.png"} alt={""} height={400} width={400} sizes="100vw"
+              <Image src={"/images/use/image097.jpg"} alt={""} height={400} width={400} sizes="100vw"
               // Make the image display full width
               style={{
                 width: '100%',
@@ -62,7 +62,7 @@ const OpportunitiesCard1 = ({}) => {
                 <div className=" gap-4 py-4 pr-2 ">
                   <div className=" ">
                     <div className="text-xl font-medium leading-tight tracking-wide underline flex justify-between w-full">
-                     <Link href={'/how-we-help/talent-discovery'}>Learn more</Link> <Icons.right/>
+                     <Link href={'/how-we-help'}>Learn more</Link> <Icons.right/>
                     </div>
                   </div>
                   <div className="relative w-6 h-6" />
@@ -91,7 +91,7 @@ const OpportunitiesCard1 = ({}) => {
                 <div className=" gap-4 py-4 pr-2 ">
                   <div className=" ">
                     <div className="text-xl font-medium leading-tight tracking-wide underline flex justify-between w-full">
-                     <Link href={'/how-we-help/resilience-building'}>Learn more</Link> <Icons.right/>
+                     <Link href={'/how-we-help'}>Learn more</Link> <Icons.right/>
                     </div>
                   </div>
                   <div className="relative w-6 h-6" />
@@ -101,7 +101,7 @@ const OpportunitiesCard1 = ({}) => {
 
             <div className="  border border-zinc-200 flex-col  items-center gap-[5px] ">
              
-              <Image src={"/images/photo7.jpg"} alt={""} height={400} width={400}sizes="100vw"
+              <Image src={"/images/use/image085.jpg"} alt={""} height={400} width={400}sizes="100vw"
               // Make the image display full width
               style={{
                 width: '100%',
@@ -120,7 +120,7 @@ const OpportunitiesCard1 = ({}) => {
                 <div className=" gap-4 py-4 pr-2 ">
                   <div className=" ">
                     <div className="text-xl font-medium leading-tight tracking-wide underline flex justify-between w-full">
-                     <Link href={'/how-we-help/community-outreach'}>Learn more</Link> <Icons.right/>
+                     <Link href={'/how-we-help'}>Learn more</Link> <Icons.right/>
                     </div>
                   </div>
                   <div className="relative w-6 h-6" />

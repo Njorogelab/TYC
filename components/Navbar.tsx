@@ -22,7 +22,7 @@ import {
 } from "@/components/ui/accordion"
 
 const Navbar = () => {
-  const [activeTab, setActiveTab] = useState("help");
+  const [activeTab, setActiveTab] = useState("null");
 
   return (
     <div>
@@ -35,13 +35,28 @@ const Navbar = () => {
           <div className="hidden grid-flow-col gap-2 rounded md:grid grid-col-3">
             
             <div className="flex-col gap-2 p-3 border-r ">
+
+            <div 
+                onMouseEnter={() => setActiveTab("aboutn")}
+                // onMouseLeave={() => setActiveTab("null")}
+                className="hover:bg-[#F1F5F9] rounded-md p-2">
+                  <Link href={'/about-us'}>
+                <p className="font-[700]">About us</p>
+                <p className="text-[#64748B] text-sm">
+                  Welcome to the heart of TYC Africa Trust, where our story
+                  unfolds, and our commitment to youth empowerment comes to
+                  life.
+                </p></Link>
+              </div>
+
+
               <div
-                onMouseEnter={() => setActiveTab("help")}
+                onMouseEnter={() => setActiveTab("helpn")}
                 // onMouseLeave={() => setActiveTab("null")}
                 className="hover:bg-[#F1F5F9] rounded-md p-2"
               >
                 <Link href={'/how-we-help'}>
-                <p className="font-[700]">How we help</p>
+                <p className="font-[700]">What we do</p>
                 <p className="text-[#64748B] text-sm">
                   Our initiatives are designed to designed to foster personal
                   growth, leadership, and community engagement.
@@ -49,48 +64,27 @@ const Navbar = () => {
               </div>
 
               <div
-                onMouseEnter={() => setActiveTab("support")}
+                onMouseEnter={() => setActiveTab("supportn")}
                 // onMouseLeave={() => setActiveTab("null")}
                 id="support"
                 className="hover:bg-[#F1F5F9] rounded-md p-2"
               >
                 <Link href={'/support-us'}>
-                <p className="font-[700]">Support</p>
+                <p className="font-[700]">How to get involved</p>
                 <p className="text-[#64748B] text-sm">
                   Explore our programs, read inspiring stories, and consider
                   joining us in our mission to empower the next generation.
                 </p></Link>
               </div>
 
-              {/* <div
-                onMouseEnter={() => setActiveTab("partner")}
-                // onMouseLeave={() => setActiveTab("null")}
-                id="partner"
-                className="hover:bg-[#F1F5F9] rounded-md p-2"
-              >
-                <p className="font-[700]">Partner with us</p>
-                <p className="text-[#64748B] text-sm">
-                  Explore our programs, read inspiring stories, and consider
-                  joining us in our mission to empower the next generation
-                </p>
-              </div> */}
+              
+
+              
 
               <div 
-                onMouseEnter={() => setActiveTab("about")}
+                onMouseEnter={() => setActiveTab("resourcesn")}
                 // onMouseLeave={() => setActiveTab("null")}
-                className="hover:bg-[#F1F5F9] rounded-md p-2">
-                <p className="font-[700]">About us</p>
-                <p className="text-[#64748B] text-sm">
-                  Welcome to the heart of TYC Africa Trust, where our story
-                  unfolds, and our commitment to youth empowerment comes to
-                  life.
-                </p>
-              </div>
-
-              <div 
-                onMouseEnter={() => setActiveTab("resources")}
-                // onMouseLeave={() => setActiveTab("null")}
-                className="hover:bg-[#F1F5F9] rounded-md p-2">
+                className="hover:bg-[#F1F5F9] rounded-md p-2 hidden">
                   <Link href={'/resources-at-tyc-africa-trust'}>
                 <p className="font-[700]">Resources at TYC Africa Trust</p>
                 <p className="text-[#64748B] text-sm">
@@ -111,7 +105,7 @@ const Navbar = () => {
               </div>
             </div>
             
-            <div className="lg:w-80">
+            <div className="lg:w-80 hidden">
 
               <div id="help" style={{display: activeTab==='help'? 'block':'none'}}>
                 <ul className="flex flex-col font-[700] underline gap-3">
@@ -181,26 +175,26 @@ const Navbar = () => {
                   <li>
                     <Link href="/about-us">About us</Link>
                   </li>
-                  <li>
-                    <Link href="/about-us">Our latest initiatives</Link>
+                  <li className="hidden">
+                    <Link href="/about-us/initiatives">Our latest initiatives</Link>
                   </li>
                   <li>
-                    <Link href="/about-us">Our history</Link>
+                    <Link href="/about-us/history">Our history</Link>
                   </li>
                   <li>
-                    <Link href="/about-us">Our people</Link>
+                    <Link href="/about-us/our-people">Our people</Link>
                   </li>
                   <li>
-                    <Link href="/about-us">Our impact stories</Link>
+                    <Link href="/about-us/impact-stories">Our impact stories</Link>
                   </li>
                   <li>
-                    <Link href="/about-us">Media centre</Link>
+                    <Link href="/about-us/gallery">Gallery</Link>
                   </li>
                   <li>
-                    <Link href="/about-us">Our core values</Link>
+                    <Link href="/about-us/core-values">Our core values</Link>
                   </li>
                   <li>
-                    <Link href="/about-us">Our events</Link>
+                    <Link href="/about-us/events">Our events</Link>
                   </li>
                 </ul>
               </div>
@@ -214,16 +208,16 @@ const Navbar = () => {
                     <Link href="/resources-at-tyc-africa-trust">Internships</Link>
                   </li>
                   <li>
-                    <Link href="/resources-at-tyc-africa-trust">Success Stories</Link>
+                    <Link href="/resources-at-tyc-africa-trust/success-stories">Success Stories</Link>
                   </li>
                   <li>
-                    <Link href="/resources-at-tyc-africa-trust">Expert Advice</Link>
+                    <Link href="/resources-at-tyc-africa-trust/expert-opinions">Expert Advice</Link>
                   </li>
                   <li>
-                    <Link href="/resources-at-tyc-africa-trust">Youth Perspectives</Link>
+                    <Link href="/resources-at-tyc-africa-trust/youth-perspectives">Youth Perspectives</Link>
                   </li>
                   <li>
-                    <Link href="/resources-at-tyc-africa-trust">Events calendar</Link>
+                    <Link href="/resources-at-tyc-africa-trust/events-calendar">Events calendar</Link>
                   </li>
                   
                 </ul>
@@ -231,7 +225,7 @@ const Navbar = () => {
             </div>
 
             
-            <div className="grid">
+            <div className="hidden">
 
               <div id="help" className="flex-col h-auto gap-3" style={{display: activeTab==='help'? 'grid':'none'}}>
 

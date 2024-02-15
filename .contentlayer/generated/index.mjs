@@ -8,9 +8,10 @@ import { allAuthors } from './Author/_index.mjs'
 import { allSuccessStories } from './SuccessStory/_index.mjs'
 import { allYouthPerspectives } from './YouthPerspective/_index.mjs'
 import { allExpertOpinions } from './ExpertOpinion/_index.mjs'
+import { allCoreValues } from './CoreValue/_index.mjs'
 
-export { allAuthors, allSuccessStories, allYouthPerspectives, allExpertOpinions }
+export { allAuthors, allSuccessStories, allYouthPerspectives, allExpertOpinions, allCoreValues }
 
-export const allDocuments = [...allAuthors, ...allSuccessStories, ...allYouthPerspectives, ...allExpertOpinions]
+export const allDocuments = [...allAuthors, ...allSuccessStories, ...allYouthPerspectives, ...allExpertOpinions, ...allCoreValues]
 
 

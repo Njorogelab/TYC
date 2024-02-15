@@ -4,9 +4,8 @@ const HeroText = () => {
   return (
     <div className="flex  flex-col gap-4 px-3 md:px-14 py-10 bg-[#19251D] text-slate-50">
 
-      <div className="flex text-center md:px-12">
-        <h1 className="font-semibold text-3xl">Your input can give young people hope</h1>
-
+      <div className="items-center md:px-12">
+        <p className="font-semibold text-center text-3xl md:px-2">Your input can give young people hope</p>
       </div>
 
       <div className="flex items-center md:px-12">

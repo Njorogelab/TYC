@@ -1,123 +1,34 @@
-import Image from "next/image";
-import Link from "next/link";
-import { FC } from "react";
+import OpportunityCard from "./Card";
 
-const OpportunitiesCard1 = ({}) => {
-  return (
-    <>
-      <div className=" relative flex flex-col justify-start items-center gap-2.5 ">
-        <div className="flex flex-col items-center justify-start gap-5 p-2 text-white md:gap-16 md:p-20 grow shrink basis-0">
-          
-          <div className="flex flex-col items-start justify-start gap-12 p-2 ">
-            <div className="flex flex-col items-center justify-start gap-2 ">
-              <div className=" text-center text-2xl  md:text-[42px] font-bold  ">
-                Explore and embrace opportunities for you
-              </div>
-            </div>
-          </div>
 
-          <div className="grid gap-4 md:grid-cols-3">
-
-            <div className="  border border-zinc-200 flex-col justify-start items-center gap-[5px] inline-flex">
-             
-              <Image src={"/images/cardpicture1.png"} alt={""} height={400} width={400} sizes="100vw"
-              // Make the image display full width
-              style={{
-                width: '100%',
-                height: '400px',}}></Image>
-              <div className="flex flex-col items-start self-stretch justify-start gap-4 px-4 pt-6 pb-4">
-                <div className="flex flex-col items-start justify-start gap-1 ">
-                  <div className=" text-2xl md:text-[40px] font-bold  md:leading-[44px]">
-                    Get Inspired
-                  </div>
-                </div>
-                <div className="self-stretch text-xl font-normal  leading-[33.60px]">
-                  Develop life skills by joining our conferences, workshops,
-                  seminars and mentorship programs
-                </div>
-              </div>
-              <div className="inline-flex items-start justify-start gap-4 p-4 ">
-                <div className="flex items-center justify-center gap-4 py-4 pr-2 ">
-                  <div className="flex items-center justify-center">
-                    <div className="text-xl font-medium leading-tight tracking-wide underline ">
-                     <Link href={'/how-we-help/youth-development-hub'}> Discover your strength and confidence.</Link>
-                    </div>
-                  </div>
-                  <div className="relative w-6 h-6" />
-                </div>
-              </div>
-            </div>
-
-            <div className="  border border-zinc-200 flex-col justify-start items-center gap-[5px] inline-flex ">
-              
-              <Image  alt={""} src={"/images/cardpicture2.png"} height={400} width={400} sizes="100vw"
-              // Make the image display full width
-              style={{
-                width: '100%',
-                height: '400px',}}></Image>
-
-              <div className="flex flex-col items-start self-stretch justify-start gap-4 px-4 pt-6 pb-4">
-                <div className="flex flex-col items-start justify-start gap-1 ">
-                  <div className="text-2xl md:text-[40px] font-bold  md:leading-[44px]">
-                    Get Empowered
-                  </div>
-                </div>
-                <div className="self-stretch text-2xl font-normal  leading-[33.60px]">
-                  Work with us to discover internship opportunities, student
-                  exchange programs and other campaigns in your chosen field.
-                  
-                </div>
-              </div>
-
-              <div className="inline-flex items-start justify-start gap-4 p-4 ">
-                <div className="flex items-center justify-between h-12 py-4 pr-2 grow shrink basis-0">
-                  <div className="flex items-center justify-center">
-                    <div className="text-xl font-medium leading-tight tracking-wide underline ">
-                    <Link href={'/how-we-help'}>Build skills for work</Link>
-                    </div>
-                  </div>
-                  <div className="relative w-6 h-6" />
-                </div>
-              </div>
-            </div>
-
-            <div className="  border border-zinc-200 flex-col justify-start items-center gap-[5px] inline-flex ">
-             
-
-              <Image  alt={""} src={"/images/cardpicture3.png"} height={400} width={400} sizes="100vw"
-              // Make the image display full width
-              style={{
-                width: '100%',
-                height: '400px',}}></Image>
-              
-              <div className="flex flex-col items-start self-stretch justify-start gap-4 px-4 pt-6 pb-4">
-                <div className="flex flex-col items-start justify-start gap-1 ">
-                  <div className="text-2xl md:text-[40px] font-bold  md:leading-[44px]">
-                    Get Involved
-                  </div>
-                </div>
-                <div className="self-stretch text-2xl font-normal  leading-[33.60px]">
-                  Join us in engaging initiatives to protect and preserve the
-                  environment as well as develop our communities
-                </div>
-              </div>
-              <div className="inline-flex items-start justify-start gap-4 p-4 ">
-                <div className="flex items-center justify-between h-12 py-4 pr-2 grow shrink basis-0">
-                  <div className="flex items-center justify-center">
-                    <div className="text-xl font-medium leading-tight tracking-wide underline ">
-                    <Link href={'/how-we-help/community-outreach'}>Explore activities</Link>
-                    </div>
-                  </div>
-                  <div className="relative w-6 h-6" />
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
+const OpportunitiesCard1 = () => (
+  <div className="relative flex flex-col justify-start items-center gap-2.5">
+    <div className="flex flex-col items-center justify-start gap-5 p-2 text-white md:gap-16 md:p-20 grow shrink basis-0">
+      <h1 className="text-center text-2xl md:text-[42px] font-bold">
+        Explore and embrace opportunities for you
+      </h1>
+      <div className="grid gap-4 md:grid-cols-3">
+        <OpportunityCard
+          title="Get Inspired"
+          description="Develop life skills by joining our conferences, workshops, seminars and mentorship programs"
+          link="/how-we-help"
+          image="/images/cardpicture1.png"
+        />
+        <OpportunityCard
+          title="Get Empowered"
+          description="Work with us to discover internship opportunities, student exchange programs and other campaigns in your chosen field."
+          link="/how-we-help"
+          image="/images/use/image142.jpg"
+        />
+        <OpportunityCard
+          title="Get Involved"
+          description="Join us in engaging initiatives to protect and preserve the environment as well as develop our communities"
+          link="/how-we-help"
+          image="/images/cardpicture3.png"
+        />
       </div>
-    </>
-  );
-};
+    </div>
+  </div>
+);
 
 export default OpportunitiesCard1;

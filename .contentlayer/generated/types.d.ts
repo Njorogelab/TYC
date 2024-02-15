@@ -22,6 +22,20 @@ export type Author = {
   slugAsParams: string
 }
 
+export type CoreValue = {
+  /** File path relative to `contentDirPath` */
+  _id: string
+  _raw: Local.RawDocumentData
+  type: 'CoreValue'
+  title: string
+  description?: string | undefined
+  image: string
+  /** MDX file body */
+  body: MDX
+  slug: string
+  slugAsParams: string
+}
+
 export type ExpertOpinion = {
   /** File path relative to `contentDirPath` */
   _id: string
@@ -81,8 +95,8 @@ export type YouthPerspective = {
 export type AllTypes = DocumentTypes | NestedTypes
 export type AllTypeNames = DocumentTypeNames | NestedTypeNames
 
-export type DocumentTypes = Author | ExpertOpinion | SuccessStory | YouthPerspective
-export type DocumentTypeNames = 'Author' | 'ExpertOpinion' | 'SuccessStory' | 'YouthPerspective'
+export type DocumentTypes = Author | CoreValue | ExpertOpinion | SuccessStory | YouthPerspective
+export type DocumentTypeNames = 'Author' | 'CoreValue' | 'ExpertOpinion' | 'SuccessStory' | 'YouthPerspective'
 
 export type NestedTypes = never
 export type NestedTypeNames = never
@@ -93,6 +107,7 @@ export type DataExports = {
   allSuccessStories: SuccessStory[]
   allYouthPerspectives: YouthPerspective[]
   allExpertOpinions: ExpertOpinion[]
+  allCoreValues: CoreValue[]
 }
 
 
@@ -113,6 +128,7 @@ declare global {
 
 export type DocumentTypeMap = {
   Author: Author
+  CoreValue: CoreValue
   ExpertOpinion: ExpertOpinion
   SuccessStory: SuccessStory
   YouthPerspective: YouthPerspective

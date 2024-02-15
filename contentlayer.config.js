@@ -128,6 +128,26 @@ fields: {
 computedFields,
 }))
 
+export const CoreValue = defineDocumentType(()=>({
+  name: 'CoreValue',
+  filePathPattern: `core-values/**/*.mdx`,
+  contentType: "mdx",
+fields: {
+  title: {
+    type: "string",
+    required: true,
+  },
+  description: {
+    type: "string",
+  },
+  image: {
+    type: "string",
+    required: true,
+  },
+},
+computedFields,
+}))
+
 export const Author = defineDocumentType(() => ({
     name: "Author",
     filePathPattern: `authors/**/*.mdx`,
@@ -150,7 +170,7 @@ export const Author = defineDocumentType(() => ({
 
   export default makeSource({
     contentDirPath: "./content",
-    documentTypes: [ Author, Successstory, YouthPerspective, ExpertOpinion ],
+    documentTypes: [ Author, Successstory, YouthPerspective, ExpertOpinion, CoreValue ],
     mdx: {
       remarkPlugins: [remarkGfm],
       rehypePlugins: [
