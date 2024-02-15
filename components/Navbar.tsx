@@ -296,81 +296,12 @@ const Navbar = () => {
           
           <div className="md:hidden">
           <Accordion type="single" collapsible className="w-full">
-      <AccordionItem value="item-1">
-        <AccordionTrigger>How we help</AccordionTrigger>
-        <AccordionContent className="px-3 rounded-md bg-blue-50">
-                <ul className="flex flex-col font-[700] underline gap-3">
-                  <li>
-                    <Link href="/">Youth Development Hub</Link>
-                  </li>
-                  <li>
-                    <Link href="/">Talent Discovery</Link>
-                  </li>
-                  <li>
-                    <Link href="/">Resilience Building</Link>
-                  </li>
-                  <li>
-                    <Link href="/">Community Outreach</Link>
-                  </li>
-                </ul>
-        </AccordionContent>
-      </AccordionItem>
-      <AccordionItem value="item-2">
-        <AccordionTrigger>Support us</AccordionTrigger>
-        <AccordionContent className="px-3 rounded-md bg-blue-50">
-        <ul className="flex flex-col font-[700] underline gap-3">
-                  <li>
-                    <Link href="/">Donate</Link>
-                  </li>
-                  <li>
-                    <Link href="/">Become a Youth Ambassador</Link>
-                  </li>
-                  <li>
-                    <Link href="/">Volunteer</Link>
-                  </li>
-                  <li>
-                    <Link href="/">Take part in an event</Link>
-                  </li>
-                  <li>
-                    <Link href="/">Legacy giving</Link>
-                  </li>
-                  <li>
-                    <Link href="/">Large gifts</Link>
-                  </li>
-                  <li>
-                    <Link href="/">More options</Link>
-                  </li>
-                </ul>
-        </AccordionContent>
-      </AccordionItem>
-      <AccordionItem value="item-3">
-        <AccordionTrigger>Partner with us</AccordionTrigger>
-        <AccordionContent className="px-3 rounded-md bg-blue-50">
-        <ul className="flex flex-col font-[700] underline gap-3">
-                  <li>
-                    <Link href="/">Non Governmental Institutions</Link>
-                  </li>
-                  <li>
-                    <Link href="/">Government Institutions</Link>
-                  </li>
-                  <li>
-                    <Link href="/">Education Institutes</Link>
-                  </li>
-                  <li>
-                    <Link href="/">Businesses</Link>
-                  </li>
-                  <li>
-                    <Link href="/">Get in touch</Link>
-                  </li>
-                </ul>
-        </AccordionContent>
-      </AccordionItem>
-      <AccordionItem value="item-4">
+          <AccordionItem value="item-4">
         <AccordionTrigger>About us</AccordionTrigger>
         <AccordionContent className="px-3 rounded-md bg-blue-50">
         <ul className="flex flex-col font-[700] underline gap-3">
                   <li>
-                    <Link href="/">Our mission</Link>
+                    <Link href="/about-us">About us</Link>
                   </li>
                   <li>
                     <Link href="/">Our latest initiatives</Link>
@@ -396,7 +327,77 @@ const Navbar = () => {
                 </ul>
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="item-5">
+      <AccordionItem value="item-1">
+        <AccordionTrigger>What we do</AccordionTrigger>
+        <AccordionContent className="px-3 rounded-md bg-blue-50">
+                <ul className="flex flex-col font-[700] underline gap-3">
+                  <li>
+                    <Link href="/how-we-help">Youth Development Hub</Link>
+                  </li>
+                  <li className="hidden">
+                    <Link href="/">Talent Discovery</Link>
+                  </li>
+                  <li className="hidden">
+                    <Link href="/">Resilience Building</Link>
+                  </li>
+                  <li className="hidden">
+                    <Link href="/">Community Outreach</Link>
+                  </li>
+                </ul>
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-2">
+        <AccordionTrigger>How to get involved</AccordionTrigger>
+        <AccordionContent className="px-3 rounded-md bg-blue-50">
+        <ul className="flex flex-col font-[700] underline gap-3">
+                  <li>
+                    <Link href="/support-us">How to get involved</Link>
+                  </li>
+                  <li className="hidden">
+                    <Link href="/">Become a Youth Ambassador</Link>
+                  </li>
+                  <li className="hidden">
+                    <Link href="/">Volunteer</Link>
+                  </li>
+                  <li className="hidden">
+                    <Link href="/">Take part in an event</Link>
+                  </li>
+                  <li className="hidden">
+                    <Link href="/">Legacy giving</Link>
+                  </li>
+                  <li className="hidden">
+                    <Link href="/">Large gifts</Link>
+                  </li>
+                  <li className="hidden">
+                    <Link href="/">More options</Link>
+                  </li>
+                </ul>
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-3" className="hidden">
+        <AccordionTrigger>Partner with us</AccordionTrigger>
+        <AccordionContent className="px-3 rounded-md bg-blue-50">
+        <ul className="flex flex-col font-[700] underline gap-3">
+                  <li>
+                    <Link href="/">Non Governmental Institutions</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Government Institutions</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Education Institutes</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Businesses</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Get in touch</Link>
+                  </li>
+                </ul>
+        </AccordionContent>
+      </AccordionItem>
+      
+      <AccordionItem value="item-5" className="hidden">
         <AccordionTrigger>Resources at TYC</AccordionTrigger>
         <AccordionContent className="px-3 rounded-md bg-blue-50">
         <ul className="flex flex-col font-[700] underline gap-3">
