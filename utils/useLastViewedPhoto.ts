@@ -1,8 +1,11 @@
-import { createGlobalState } from "react-hooks-global-state";
+// import { createGlobalState } from "react-hooks-global-state";
 
-const initialState = { photoToScrollTo: null };
-const { useGlobalState } = createGlobalState(initialState);
+// const initialState = { photoToScrollTo: null };
+// const { useGlobalState } = createGlobalState(initialState);
 
-export const useLastViewedPhoto = () => {
-  return useGlobalState("photoToScrollTo");
-};
+// export const useLastViewedPhoto = () => {
+//   return useGlobalState("photoToScrollTo");
+// };
+import { fchmod } from "fs";
+
+fchmod
